@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Cecelia's Favorite Recipes</title></head>
+<body>
+<h1>Cecelia's Favorite Recipes</h1>
+<a href="/add">Add a New Recipe</a>
+<ul>
+    <li th:each="recipe : ${recipes}">
+        <a th:href="@{'/recipe/' + ${recipe.id}}" th:text="${recipe.name}"></a>
+    </li>
+</ul>
+</body>
+</html>

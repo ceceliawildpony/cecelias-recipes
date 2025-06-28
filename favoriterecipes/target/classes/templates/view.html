@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head><title>View Recipe</title></head>
+<body>
+<h1 th:text="${recipe.name}"></h1>
+<p><strong>Description:</strong> <span th:text="${recipe.description}"></span></p>
+<p><strong>Ingredients:</strong> <span th:text="${recipe.ingredients}"></span></p>
+<a href="/">Back to Home</a>
+</body>
+</html>
